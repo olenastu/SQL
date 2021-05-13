@@ -1,0 +1,32 @@
+-----GET DATE------
+returns current date and time
+
+SELECT GETDATE ()
+SELECT GETDATE () AS CurrentDateTime
+
+----UPPER----------
+converts string to upper-case
+
+SELECT UPPER ('very nice cat') AS Cat
+
+----LOWER---------
+converts string to lower-case
+SELECT LOWER('VERY Nice CAT') AS Cat
+
+----DATEDIFF------
+returns the count of interval boundaries crossed between dates
+
+SELECT DATEDIFF (YEAR, GETDATE(), '20401201')
+SELECT DATEDIFF (DAY, GETDATE(), '20401201')
+SELECT DATEDIFF (HOUR, GETDATE(), '20401201')
+
+-----COUNT-------
+SELECT COUNT(*) AS FnCount FROM Table
+
+----SUM----------
+SELECT SUM(ListPrice) AS FnSum FROM Table
+
+----MIN----------
+SELECT MIN(ListPrice) AS FnMIN
+FROM Table
+
