@@ -1,0 +1,3 @@
+Download Developer Edition of SQL Server from website https://www.microsoft.com/en-us/sql-server/sql-server-downloads. Developer editions is free of charge.
+Download SQL Server Management Studio (SSMS) https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+Sample database - AdventureWorks https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms (OLTP version). 
