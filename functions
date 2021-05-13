@@ -30,3 +30,14 @@ SELECT SUM(ListPrice) AS FnSum FROM Table
 SELECT MIN(ListPrice) AS FnMIN
 FROM Table
 
+-----COUNT-------
+returns the number
+SELECT COUNT(ProductID) AS NumberOfProducts FROM Products;
+
+----JOIN---------
+
+SELECT *
+FROM Production.Product
+JOIN Prodution.ProductSubCategory
+ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
+
