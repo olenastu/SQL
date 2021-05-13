@@ -1,0 +1,80 @@
+--> * - means all columns from the table
+  Example: SELECT * FROM Person.Person
+  
+--> template:
+SELECT
+FROM
+JOIN
+WHERE
+GROUP BY /ORDER BY
+GO
+
+--> If table name consists space we need to use [square brackets]
+ProductID = primary key, PK
+
+--> aliases
+SELECT ProductID AS ID, Name AS Nazwa, Color AS Kolor, Size AS Rozmiar
+FROM dbo.Default
+
+-->IntelliSense - code completion tool that is built in Microsoft Visual Studio and SQL Server. It helps to speed up code development.
+
+--> create table
+CREATE TABLE Table_name (id int)
+
+----DATA SORTING / operator ORDER BY-----
+SELECT column1, column 2
+FROM table_name
+ORDER BY column1
+
+Example: Order by descending
+SELECT TestColumn1
+FROM TestTable1
+ORDER BY TestColumn1 DESC
+
+Example: Order by ascending
+SELECT TestColumn1
+FROM TestTable1
+ORDER BY TestColumn1 ASC
+
+---------------------------
+
+----FILTER COLUMNS / operator WHERE----------
+
+Example1.
+SELECT ProductID, Name, Color, Size
+FROM Production.Product
+WHERE ProductID=707
+
+Example2.
+SELECT ProductID, Name, Color, Size
+FROM Production.Product
+WHERE ProductID > 100
+
+Example3.
+SELECT ProducID, Name, Color, Size
+FROM Production.Product
+WHERE ProductID BETWEEN 13 AND 360
+
+-----operator BETWEEN------------
+BETWEEN operator selects values within a given range
+---------------------------------
+
+!!! For text values you should remember about ' '
+
+-----operator LIKE-------
+The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+There are two wildcards often used in conjunction with the LIKE operator:
+
+ The percent sign (%) represents zero, one, or multiple characters
+ The underscore sign (_) represents one, single character
+
+
+----operator AND OR------
+
+SELECT CompanyName
+FROM dbo.Suppliers
+WHERE Fax IS NOT NULL AND HomePage IS NOT NULL
+
+
+
